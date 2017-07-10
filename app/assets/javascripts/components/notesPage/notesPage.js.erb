@@ -1,0 +1,15 @@
+angular
+  .module('notesApp')
+  .component('notesPage', {
+    templateUrl: '<%= asset_path("components/notesPage/notesPage") %>',
+    controller: NotesPageController
+  });
+
+NotesPageController.$inject = [];
+
+function NotesPageController(){
+  var vm = this;
+
+  vm.message = 'blah';
+
+};

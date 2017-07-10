@@ -1,0 +1,19 @@
+<h1>Home Page</h1>
+<p>
+  {{ $ctrl.message }}
+</p>
+
+<ul ng-repeat='note in $ctrl.notes'>
+  Title: {{ note.title }}
+  <br>
+  Body: {{ note.body }}
+
+</ul>
+
+<form ng-submit="$ctrl.notes">
+   <input type = "text" name= "name" ng-model= "$ctrl.title" 
+   >
+      <input type = "text" name= "name" ng-model= "$ctrl.body" >
+
+   <input type="submit" name="Create Account"> 
+</form>
